@@ -22,7 +22,7 @@ stepsTotal<-aggregate(steps~date,data=activity,sum,na.rm=TRUE)
 
 ## What is mean total number of steps taken per day?
 
-### Historgram
+### Histogram
 ```{r echo=TRUE}
 hist(stepsTotal$steps)
 ```
@@ -91,7 +91,7 @@ cat("Total ",count, "NA values were filled.\n\r")
 
 
 ```
-### Historgram
+### Histogram
 ```{r echo=TRUE}
 stepsFilled<-aggregate(steps~date,data=activityFilled,sum,na.rm=TRUE)
 hist(stepsFilled$steps)
